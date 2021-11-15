@@ -1,4 +1,4 @@
-var tasks = {};
+var tasks;
 
 var createTask = function(taskText, taskDate, taskList) {
   // create elements that make up a task item
@@ -79,7 +79,7 @@ $(".list-group").on("blur", "textarea", function() {
   saveTasks();
 
   // recreate p element
-  var taskP = $("<p")
+  var taskP = $("<p>")
     .addClass("m-1")
     .text(text);
 });
